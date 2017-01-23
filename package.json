@@ -2,7 +2,7 @@
   "name": "word-of-the-day",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://connorgarber.com",
+  "homepage": "http://connorgarber.com/word-of-the-day",
   "devDependencies": {
     "react-scripts": "0.8.5"
   },
