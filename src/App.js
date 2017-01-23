@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
 import axios from 'axios';
+import './App.css';
 
 class App extends Component {
   constructor() {
@@ -27,7 +26,7 @@ class App extends Component {
 
     for (var i = 0; i < definitions.length; i++) {
       defs.push(
-        <p className="definition" key={i}>{definitions[i].text}</p>
+        <p className="definition" key={i}>{i+1}. {definitions[i].text}</p>
       );
     }
     return <div>{defs}</div>;
@@ -43,8 +42,8 @@ class App extends Component {
 
     return (
       <div className="container">
-        <h2>{this.state.word}</h2>
-        <div>{definitions}</div>
+        <h1 id="word">{this.state.word}</h1>
+        <div className="def">{definitions}</div>
       </div>
 
     );
