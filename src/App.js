@@ -42,12 +42,11 @@ class App extends Component {
     let definitions = this._getDefinition();
 
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>{this.state.word}</h2>
-          <div>{definitions}</div>
-        </div>
+      <div className="container">
+        <h2>{this.state.word}</h2>
+        <div>{definitions}</div>
       </div>
+
     );
   }
 }
